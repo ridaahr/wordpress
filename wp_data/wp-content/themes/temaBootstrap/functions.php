@@ -9,6 +9,9 @@ function wpbootstrap_styles()
     wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array('jquery'), '3.3.3', true);
 }
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles');
+add_action('after_setup_theme', function () {
+    add_theme_support('post-thumbnails');
+});
 
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 {

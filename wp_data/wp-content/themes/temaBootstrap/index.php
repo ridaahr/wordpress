@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<p>Esto es de <strong>page.php</strong></p>
+<p>Esto es de <strong>index.php</strong></p>
 <?php
 while (have_posts()): the_post();
 ?>
