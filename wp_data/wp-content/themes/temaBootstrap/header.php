@@ -26,7 +26,6 @@
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
             ?>
-            <button class="btn btn-primary">Click</button>
         </div>
     </div>
 </nav>
