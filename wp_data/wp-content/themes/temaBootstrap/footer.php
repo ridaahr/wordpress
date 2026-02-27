@@ -8,14 +8,19 @@
                 'container' => false,
                 'menu_class' => 'nav justify-content-center border-bottom pb-3 mb-3',
                 'fallback_cb' => false,
-                'walker' => new bootstrap_5_wp_nav_menu_walker() // <--- IMPORTANTE
+                'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
         endif;
         ?>
 
-        <p class="text-center text-body-secondary">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-        
-    </div>
+        <p class="text-center text-body-secondary">
+            &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+        </p>
 
-    <?php wp_footer(); ?>
+    </div>
 </footer>
+
+<?php wp_footer(); ?>
+</body>
+
+</html>

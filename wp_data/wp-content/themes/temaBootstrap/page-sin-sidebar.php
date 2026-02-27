@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+
+
+<?php 
+/*
+* Template name: Sin sidebar
+*/
+
+get_header(); ?>
 
 <main class="container my-5">
     <div class="row">
@@ -44,10 +51,6 @@
             <?php endwhile; ?>
 
         </div>
-
-        <!-- SIDEBAR -->
-        <?php get_sidebar(); ?>
-
     </div>
 </main>
 
