@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main class="container my-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">

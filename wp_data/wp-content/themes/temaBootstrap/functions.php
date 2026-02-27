@@ -9,9 +9,17 @@ function wpbootstrap_styles()
     wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array('jquery'), '3.3.3', true);
 }
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles');
-add_action('after_setup_theme', function () {
-    add_theme_support('post-thumbnails');
-});
+function plantillaBootstrap_setup() {
+    // Para habilitar imagenes destacadas
+    add_theme_support( 'post-thumbnails');
+    // Agregando mas tamaños de imagenes
+    add_image_size( 'square', 350, 350, true );
+    add_image_size( 'portrait', 350, 724, true );
+    add_image_size( 'cajas', 400, 375, true );
+    add_image_size( 'mediano', 700, 400, true );
+    add_image_size( 'blog', 966, 644, true );
+}
+add_action( 'after_setup_theme', 'plantillaBootstrap_setup');
 
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 {
