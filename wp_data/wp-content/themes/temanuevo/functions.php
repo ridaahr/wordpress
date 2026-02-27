@@ -41,4 +41,18 @@ function mitemplat_scripts_stayles() {
     wp_enqueue_script( 'scripts', get_template_directory_uri( ) . '/js/scripts.js', array('jquery', 'slicknavJS'), '1.0.0', true );
     
 }
+
+function wpbootstrap_sidebar() {
+    register_sidebar(array(
+        'name'          => 'Main Sidebar',
+        'id'            => 'main-sidebar',
+        'description'   => 'Sidebar principal',
+        'before_widget' => '<div class="mb-4">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h5>',
+        'after_title'   => '</h5>',
+    ));
+}
+add_action('widgets_init', 'wpbootstrap_sidebar');
+
 add_action( 'wp_enqueue_scripts', 'mitemplat_scripts_stayles' );

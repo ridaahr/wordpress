@@ -18,7 +18,7 @@
             <?php endwhile; ?> 
         </div>
         <aside class="sidebar">
-            <h1>sidebar aqui</h1>
+            <?php get_sidebar(); ?>
         </aside>
 
     </main>
