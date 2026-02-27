@@ -21,6 +21,7 @@ function plantillaBootstrap_setup() {
 }
 add_action( 'after_setup_theme', 'plantillaBootstrap_setup');
 
+
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 {
     private $current_item;
